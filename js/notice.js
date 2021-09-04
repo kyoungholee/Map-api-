@@ -1,6 +1,7 @@
+const { kakao } = window;
 
-    var markers= [];
-    var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
+export default function Keyword(searchPlace) {
+  var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
 
     const container = document.getElementById('myMap');
     const options = {
@@ -121,3 +122,5 @@
         });
 
     }
+
+}
